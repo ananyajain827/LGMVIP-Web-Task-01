@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightpink;
+    font-family: "PT Serif", serif;
+
+}
+
+.container{
+    background-color: palevioletred;
+    height: 50%;
+    width: 30%;
+    margin-left: 34%;
+    margin-top: 150px;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0px 3px 20px rgb(90, 87, 87);
+}
+
+.container h1{
+    color: whitesmoke;
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+}
+
+.row{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#input-box{
+    height: 30px;
+    width: 77%;
+    padding: 5px;
+    border-radius: 20px;
+    border-color: white;
+    padding-left: 15px; 
+    font-size: 17px;
+    padding: 10px;
+}
+
+button{
+    height: 44px;
+    width: 69px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: pink;
+    font-size: 18px;
+    border-color: white;
+    color: rgb(106, 30, 55);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(138, 138, 138);
+    color: white;
+}
+
+ul li{
+    color: black;
+    list-style: none;
+    padding: 9px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: rgb(189, 186, 187);
+    margin: 10px;
+    border-radius: 20px;
+    margin-left: 5px;
+    user-select: none;
+    padding-left: 30px;
+}
+
+ul li::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(uncheck.png);
+    background-size:cover;
+    margin-left: -23px;
+    margin-top: 2px;
+    background-position: center;
+    position: absolute;
+    background-color: white;
+}
+
+ul li.checked{
+    color: black;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(check-mark-icon-5374.jpg);
+    background-color: aqua;
+}
+
+ul li i{
+    right: 37%;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.5s;
+    margin-top: 2px;
+    font-size: 17px;
+}
+
+ul li i:hover{
+    color: white;
+    margin-top: -7px;
+    font-size: 20px;
+}
